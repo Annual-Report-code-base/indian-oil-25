@@ -204,7 +204,7 @@ const AboutHome = () => {
                         <div ref={centerRef} className="absolute inset-0 flex items-center justify-center">
                             <div className="text-center bg-[#fbdec8] rounded-full shadow-xl backdrop-blur-sm 
                                 flex flex-col items-center justify-center w-70 h-70 xl:w-64 xl:h-64 p-6">
-                                <div className="w-1  6 xl:w-20 mb-3">
+                                <div className="w-16 md:w-18 mb-3">
                                     <img src="./Indian-oil-logo.webp" alt="Indian Oil Logo" className="w-full h-auto" />
                                 </div>
                                 <h3 className="text-xl  font-semibold text-gray-700 mb-2">
