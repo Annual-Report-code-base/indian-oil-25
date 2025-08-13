@@ -6,12 +6,11 @@ import Portfolio from '../Components/Home/Portfolio'
 const Home = () => {
   return (
     <div>
-        <Cover/>
-        <div className='marginal'> 
-            <AboutHome/>
-        </div>
-            <Portfolio/>
-        
+      <Cover />
+      <div className='marginal'>
+        <AboutHome />
+      </div>
+      <Portfolio />
     </div>
   )
 }
