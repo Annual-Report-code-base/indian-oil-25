@@ -174,7 +174,7 @@ const CapitalCover = ({
           <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold mb-4">
             {highlightText}
           </h3>
-          <p className="text-sm lg:text-base leading-relaxed">
+          <p className="text-sm lg:text-base whitespace-break-spaces leading-relaxed">
             {description}
           </p>
         </div>

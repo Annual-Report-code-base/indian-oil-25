@@ -169,13 +169,13 @@ const NavMenu = () => {
             </button>
 
             <div
-                className={`overflow-hidden transition-all duration-400 ease-in-out ${isExpanded ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                    }`}
+                className={`overflow-hidden transition-all duration-400 ease-in-out ${isExpanded ? 'opacity-100' : 'opacity-0'}`}
                 style={{
-                    maxHeight: isExpanded ? '400px' : '0px',
-                    transition: 'max-height 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.3s ease-in-out'
+                    maxHeight: isExpanded ? '9999px' : '0px',
+                    transition: 'max-height 0.5s ease, opacity 0.3s ease-in-out'
                 }}
             >
+
                 <div className="bg-gray-100 py-2">
                     {subSection.items.map((item, index) => (
                         <Link
@@ -223,9 +223,10 @@ const NavMenu = () => {
                 className={`overflow-hidden transition-all duration-400 ease-in-out ${isExpanded ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                     }`}
                 style={{
-                    maxHeight: isExpanded ? (section.hasSubSections ? '800px' : '600px') : '0px',
+                    maxHeight: isExpanded ? '9999px' : '0px',
                     transition: 'max-height 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.3s ease-in-out'
                 }}
+
             >
                 <div className="bg-gray-50 py-2">
                     {section.hasSubSections ? (
@@ -301,7 +302,7 @@ const NavMenu = () => {
 
                     <div className='text-sm'>
                         <p>Integrated Annual Report <b>2024-25</b></p>
-                        
+
                     </div>
 
                     <button

@@ -13,6 +13,11 @@ import MaterialityAssessment from './Pages/MaterialityAssessment';
 import VCM from './Pages/VCM';
 import Fueling from './Pages/Fueling';
 import ManufacturedCap from './Pages/manufacturedCap';
+import Footer from './Components/Footer';
+import FinancialCap from './Pages/FinancialCap';
+import SRCap from './Pages/SRCap';
+import Intellectualcap from './Pages/Intellectualcap';
+import HumanCap from './Pages/HumanCap';
 
 function App() {
 
@@ -32,6 +37,10 @@ function App() {
               <Route path='/indianoil-s-value-creation-model' element={<VCM />} />
               <Route path='/fuelling-sustainable-growth' element={<Fueling />} />
               <Route path='/manufactured-capital' element={<ManufacturedCap />} />
+              <Route path='/financial-capital' element={<FinancialCap />} />
+              <Route path='/social-relationship-capital' element={<SRCap />} />
+              <Route path='/intellectual-capital' element={<Intellectualcap />} />
+              <Route path='/human-capital' element={<HumanCap />} />
 
             </Routes>
           </div>
