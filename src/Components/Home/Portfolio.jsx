@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { LuChevronLeft, LuChevronRight } from 'react-icons/lu';
 import { gsap } from 'gsap';
 import { AnimatedHeading, AnimatedText } from '../AnimationLib';
+import KnowMore from '../KnowMore';
 
 const Portfolio = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -258,17 +259,7 @@ const Portfolio = () => {
 
                                         {/* Button */}
                                         <div>
-                                            <button
-                                                className="bg-white bg-opacity-85 text-[#1a1a2e] text-xl font-medium py-3 px-8 rounded uppercase transition-all duration-300 hover:bg-[#d4574e] hover:text-white"
-                                                onMouseEnter={(e) => {
-                                                    gsap.to(e.target, { scale: 1.05, duration: 0.2 });
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    gsap.to(e.target, { scale: 1, duration: 0.2 });
-                                                }}
-                                            >
-                                                {slide.buttonText}
-                                            </button>
+                                            <KnowMore/>
                                         </div>
                                     </div>
                                 </div>

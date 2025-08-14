@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { HiMenu, HiX, HiChevronDown, HiChevronRight } from 'react-icons/hi';
+import { RiDownloadCloud2Line } from "react-icons/ri";
 import { Link } from 'react-router-dom';
 
 const NavMenu = () => {
@@ -10,10 +11,10 @@ const NavMenu = () => {
     const overlayRef = useRef(null);
 
     const slugify = (text) =>
-  text
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)+/g, '');  
+        text
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/(^-|-$)+/g, '');
 
     const slideIn = (element) => {
         if (!element) return;
@@ -150,7 +151,7 @@ const NavMenu = () => {
                 { name: "Comments of Comptroller and Auditor General of India", page: 438 },
                 { name: "Notice", page: 442 }
             ]
-        }
+        },
     };
 
 
@@ -180,10 +181,10 @@ const NavMenu = () => {
                         <Link
                             key={index}
                             to={
-  section.isInternal
-    ? `/${slugify(item.name)}`
-    : `/Annual-Report-2024.pdf#page=${item.page}`
-}
+                                section.isInternal
+                                    ? `/${slugify(item.name)}`
+                                    : `/Annual-Report-2024.pdf#page=${item.page}`
+                            }
 
                             target={section.isInternal ? '_self' : '_blank'}
                             className="block px-8 py-3 text-gray-700 hover:bg-white hover:text-blue-600 transition-all duration-200 flex items-center justify-between group"
@@ -298,6 +299,11 @@ const NavMenu = () => {
                         <img src="./Indian-oil-logo.webp" alt="" />
                     </div>
 
+                    <div className='text-sm'>
+                        <p>Integrated Annual Report <b>2024-25</b></p>
+                        
+                    </div>
+
                     <button
                         onClick={() => setIsMenuOpen(true)}
                         className="p-2 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -353,6 +359,15 @@ const NavMenu = () => {
                             isExpanded={expandedSection === 'financialStatements'}
                             onToggle={toggleAccordion}
                         />
+                        <a href="https://iocl.com/download/SingleAnnualReport202425.pdf" target='_blank' className='border-b border-gray-200'>
+                            <div className="w-full bg-gray-300 px-6 py-4 bg- flex cursor-pointer items-center justify-between text-left hover:bg-gray-200 transition-colors duration-200">
+                                <span className='text-lg font-semibold text-gray-800'>
+                                    Download Full Report
+                                </span>
+                                <RiDownloadCloud2Line className='text-gray-800' />
+
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
