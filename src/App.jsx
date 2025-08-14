@@ -18,6 +18,13 @@ import FinancialCap from './Pages/FinancialCap';
 import SRCap from './Pages/SRCap';
 import Intellectualcap from './Pages/Intellectualcap';
 import HumanCap from './Pages/HumanCap';
+import Awards from './Pages/Awards';
+import BOD from './Pages/BOD';
+import SeniorExecutives from './Pages/SeniorExecutives';
+import MainOffices from './Pages/MainOffices';
+import Auditors from './Pages/Auditors';
+import GroupCompanies from './Pages/GroupCompanies';
+import Performance from './Pages/Performance';
 
 function App() {
 
@@ -41,7 +48,14 @@ function App() {
               <Route path='/social-relationship-capital' element={<SRCap />} />
               <Route path='/intellectual-capital' element={<Intellectualcap />} />
               <Route path='/human-capital' element={<HumanCap />} />
-
+              <Route path='/awards-and-accolades' element={<Awards />} />
+              <Route path='/board-of-directors' element={<BOD />} />
+              <Route path='/list-of-senior-executives' element={<SeniorExecutives />} />
+              <Route path='/main-offices-major-units' element={<MainOffices />} />
+              <Route path='/auditors-bankers-rta-etc' element={<Auditors />} />
+              <Route path='/group-companies' element={<GroupCompanies />} />
+              <Route path='/performance-at-a-glance' element={<Performance />} />
+              
             </Routes>
           </div>
           <Footer/>
