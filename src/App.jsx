@@ -5,7 +5,13 @@ import ScrollToTop from './Components/ScrollToTop';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
 import NavMenu from './Components/NavMenu';
-import Footer from './Components/Footer';
+import LeadershipTeam from './Pages/LeadershipTeam';
+import BoardProfile from './Pages/BoardProfile';
+import RiskManagement from './Pages/RiskManagement';
+import StakeholderEngagement from './Pages/StakeholderEngagement';
+import MaterialityAssessment from './Pages/MaterialityAssessment';
+import VCM from './Pages/VCM';
+import Fueling from './Pages/Fueling';
 import ManufacturedCap from './Pages/manufacturedCap';
 
 function App() {
@@ -18,8 +24,15 @@ function App() {
           <div className="pt-20"> 
             <Routes>
               <Route path='/' element={<Home />} />
-
+              <Route path='/leadership-team' element={<LeadershipTeam />} />
+              <Route path='/board-profile' element={<BoardProfile />} />
+              <Route path='/risk-management' element={<RiskManagement />} />
+              <Route path='/stakeholder-engagement' element={<StakeholderEngagement />} />
+              <Route path='/materiality-assessment' element={<MaterialityAssessment />} />
+              <Route path='/indianoil-s-value-creation-model' element={<VCM />} />
+              <Route path='/fuelling-sustainable-growth' element={<Fueling />} />
               <Route path='/manufactured-capital' element={<ManufacturedCap />} />
+
             </Routes>
           </div>
           <Footer/>
