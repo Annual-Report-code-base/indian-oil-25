@@ -108,14 +108,14 @@ const NavMenu = () => {
             title: "Statutory Reports",
             isInternal: false,
             items: [
-                { name: "Directors' Report", page: 110 },
-                { name: "Annexure I - SC/ST/OBC Report", page: 128 },
-                { name: "Annexure II - CSR Report", page: 130 },
-                { name: "Annexure III - Secretarial Audit Report", page: 141 },
-                { name: "Annexure IV - Form No. AOC 2", page: 144 },
-                { name: "Annexure V - Report on Energy Conservation, Technology Absorption and Foreign Exchange Earning", page: 145 },
-                { name: "Report on Corporate Governance", page: 148 },
-                { name: "Management's Discussion and Analysis", page: 169 }
+                { name: "Directors' Report", pdf: "./docs/Directors-Report.pdf" },
+                { name: "Annexure I - SC/ST/OBC Report", pdf: "./docs/Annexure1-SC:ST:OBC Report.pdf" },
+                { name: "Annexure II - CSR Report", pdf: "./docs/AnnexureII-CSR-Report.pdf" },
+                { name: "Annexure III - Secretarial Audit Report", pdf: "./docs/AnnexureIII-Secretarial-Audit-Report.pdf" },
+                { name: "Annexure IV - Form No. AOC 2", pdf: "./docs/AnnexureIV-FormNoAOC2.pdf" },
+                { name: "Annexure V - Report on Energy Conservation, Technology Absorption and Foreign Exchange Earning", pdf: "./docs/AnnexureV.pdf" },
+                { name: "Report on Corporate Governance", pdf: "./docs/Report on Corporate Governance.pdf" },
+                { name: "Management's Discussion and Analysis", pdf: "./docs/mda.pdf" }
             ]
         },
         financialStatements: {
@@ -126,30 +126,30 @@ const NavMenu = () => {
                 standalone: {
                     title: "Standalone",
                     items: [
-                        { name: "Independent Auditors' Report", page: 186 },
-                        { name: "Balance Sheet", page: 204 },
-                        { name: "Statement of Profit and Loss", page: 206 },
-                        { name: "Statement of Cash Flows", page: 208 },
-                        { name: "Statement of Changes in Equity", page: 210 },
-                        { name: "Notes to Financial Statements", page: 212 },
-                        { name: "Income & Expenditure Account-Township, etc.", page: 313 }
+                        { name: "Independent Auditors' Report", pdf: "./docs/StandaloneIndependentAuditorsReport.pdf" },
+                        { name: "Balance Sheet", pdf: "./docs/StandaloneBalance Sheet.pdf" },
+                        { name: "Statement of Profit and Loss", pdf: "./docs/sfs Statement of Profit and Loss.pdf" },
+                        { name: "Statement of Cash Flows", pdf: "./docs/sfs-Statement of Cash Flows.pdf" },
+                        { name: "Statement of Changes in Equity", pdf: "./docs/sfs-Statement of Changes in Equity.pdf" },
+                        { name: "Notes to Financial Statements", pdf: "./docs/sfs-Notes to Financial Statements.pdf" },
+                        { name: "Income & Expenditure Account-Township, etc.", pdf: "./docs/sfs-Income-Expenditure.pdf" }
                     ]
                 },
                 consolidated: {
                     title: "Consolidated",
                     items: [
-                        { name: "Independent Auditors' Report", page: 314 },
-                        { name: "Balance Sheet", page: 324 },
-                        { name: "Statement of Profit and Loss", page: 326 },
-                        { name: "Statement of Cash Flows", page: 328 },
-                        { name: "Statement of Changes in Equity", page: 330 },
-                        { name: "Notes to Financial Statements", page: 332 }
+                        { name: "Independent Auditors' Report", pdf: "./docs/cfs-Independent-Auditors-Report.pdf" },
+                        { name: "Balance Sheet", pdf: "./docs/cfs-Balance-Sheet.pdf" },
+                        { name: "Statement of Profit and Loss", pdf: "./docs/cfs-Statement of Profit and Loss.pdf" },
+                        { name: "Statement of Cash Flows", pdf: "./docs/cfs-Statement of Cash Flows.pdf" },
+                        { name: "Statement of Changes in Equity", pdf: "./docs/cfs-Statement of Changes in Equity.pdf" },
+                        { name: "Notes to Financial Statements", pdf: "./docs/cfs-Notes to Financial Statements.pdf" }
                     ]
                 }
             },
             additionalItems: [
-                { name: "Comments of Comptroller and Auditor General of India", page: 438 },
-                { name: "Notice", page: 442 }
+                { name: "Comments of Comptroller and Auditor General of India", pdf: "./docs/Comments.pdf" },
+                { name: "Notice", pdf: "./docs/Notice.pdf" }
             ]
         },
     };
@@ -183,9 +183,8 @@ const NavMenu = () => {
                             to={
                                 section.isInternal
                                     ? `/${slugify(item.name)}`
-                                    : `/Annual-Report-2024.pdf#page=${item.page}`
+                                    : item.pdf
                             }
-
                             target={section.isInternal ? '_self' : '_blank'}
                             className="block px-8 py-3 text-gray-700 hover:bg-white hover:text-blue-600 transition-all duration-200 flex items-center justify-between group"
                             onClick={() => setIsMenuOpen(false)}
@@ -245,17 +244,18 @@ const NavMenu = () => {
                             {section.additionalItems && section.additionalItems.length > 0 && (
                                 <div className="border-t border-gray-300 mt-2 pt-2">
                                     {section.additionalItems.map((item, index) => (
-                                        <button
-                                            key={index}
-                                            onClick={() => handleMenuClick(section, item)}
+                                        <a
+                                            // key={index}
+                                            href={item.pdf}
+                                            target='_blank'
                                             className="w-full px-8 py-3 text-left text-gray-700 hover:bg-white hover:text-blue-600 transition-all duration-200 flex items-center justify-between group"
                                         >
                                             <span className="text-sm">{item.name}</span>
                                             <div className="flex items-center space-x-2">
-                                                <span className="text-xs text-gray-500">Page {item.page}</span>
+                                                
                                                 <HiChevronRight size={14} className="text-gray-400 group-hover:text-blue-600 transition-colors" />
                                             </div>
-                                        </button>
+                                        </a>
                                     ))}
                                 </div>
                             )}
@@ -267,7 +267,7 @@ const NavMenu = () => {
                                 to={
                                     section.isInternal
                                         ? `/${slugify(item.name)}`
-                                        : `/Annual-Report-2024.pdf#page=${item.page}`
+                                          : item.pdf
                                 }
 
                                 target={section.isInternal ? '_self' : '_blank'}

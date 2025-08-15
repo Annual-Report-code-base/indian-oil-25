@@ -25,17 +25,27 @@ import MainOffices from './Pages/MainOffices';
 import Auditors from './Pages/Auditors';
 import GroupCompanies from './Pages/GroupCompanies';
 import Performance from './Pages/Performance';
+import AboutUs2 from './Pages/AboutUs2';
+import OurBusinesses from './Pages/OurBusinesses';
+import CompetitiveEdge from './Pages/CompetitiveEdge';
+import ChairmansPerspective from './Pages/ChairmansPerspective';
+import NaturalCap from './Pages/NaturalCap';
+import Governance from './Pages/Governance';
 
 function App() {
-
   return (
     <div>
       <BrowserRouter>
         <ScrollToTop>
-          <NavMenu/>
-          <div className="pt-20"> 
+          <NavMenu />
+          <div className="pt-20">
             <Routes>
               <Route path='/' element={<Home />} />
+              <Route path='/about-us' element={<AboutUs2 />} />
+              <Route path='/our-businesses' element={<OurBusinesses />} />
+              <Route path='/competitive-edge' element={<CompetitiveEdge />} />
+              <Route path='/from-the-chairman-s-desk' element={<ChairmansPerspective />} />
+              <Route path='/governance' element={<Governance />} />
               <Route path='/leadership-team' element={<LeadershipTeam />} />
               <Route path='/board-profile' element={<BoardProfile />} />
               <Route path='/risk-management' element={<RiskManagement />} />
@@ -48,6 +58,7 @@ function App() {
               <Route path='/social-relationship-capital' element={<SRCap />} />
               <Route path='/intellectual-capital' element={<Intellectualcap />} />
               <Route path='/human-capital' element={<HumanCap />} />
+              <Route path='/natural-capital' element={<NaturalCap />} />
               <Route path='/awards-and-accolades' element={<Awards />} />
               <Route path='/board-of-directors' element={<BOD />} />
               <Route path='/list-of-senior-executives' element={<SeniorExecutives />} />
@@ -55,10 +66,9 @@ function App() {
               <Route path='/auditors-bankers-rta-etc' element={<Auditors />} />
               <Route path='/group-companies' element={<GroupCompanies />} />
               <Route path='/performance-at-a-glance' element={<Performance />} />
-              
             </Routes>
           </div>
-          <Footer/>
+          <Footer />
         </ScrollToTop>
       </BrowserRouter>
     </div>
