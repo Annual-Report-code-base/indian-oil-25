@@ -120,7 +120,7 @@ export default function ChairmansPerspective() {
           {/* Image */}
           <div>
             <img
-              src="public/iol-images/From the Chairman's Desk/Mono Ethylene Glycol (Meg) Unit At Paradip Refinery.webp"
+              src="./iol-images/From the Chairman's Desk/Mono Ethylene Glycol (Meg) Unit At Paradip Refinery.webp"
               alt="Paradip Refinery"
               className="w-full rounded-lg shadow-lg"
             />
@@ -159,7 +159,7 @@ export default function ChairmansPerspective() {
           {/* First Image */}
           <div>
             <img
-              src="public/iol-images/From the Chairman's Desk/Main-line-lowering-img.webp"
+              src="./iol-images/From the Chairman's Desk/Main-line-lowering-img.webp"
               alt="Mainline Lowering Vijayawada"
               className="w-full rounded-lg shadow-lg"
             />
@@ -237,7 +237,7 @@ export default function ChairmansPerspective() {
           {/* Second Image */}
           <div>
             <img
-              src="public/iol-images/From the Chairman's Desk/Indianoil Company-img.webp"
+              src="./iol-images/From the Chairman's Desk/Indianoil Company-img.webp"
               alt="IndianOil Retail Outlet"
               className="w-full rounded-lg shadow-lg"
             />
@@ -273,7 +273,7 @@ export default function ChairmansPerspective() {
             {/* First Image */}
             <div>
               <img
-                src="public/iol-images/From the Chairman's Desk/Indianoil Refuelling Defence-img.webp"
+                src="./iol-images/From the Chairman's Desk/Indianoil Refuelling Defence-img.webp"
                 alt="IndianOil Refuelling Defence Aircraft at Trivandrum AFS"
                 className="w-full rounded-lg shadow-lg"
               />
@@ -351,7 +351,7 @@ export default function ChairmansPerspective() {
           {/* Second Image */}
           <div>
             <img
-              src="public/iol-images/From the Chairman's Desk/Ev Charging Station-img.webp"
+              src="./iol-images/From the Chairman's Desk/Ev Charging Station-img.webp"
               alt="EV Charging Station at IndianOil’s Heritage Retail Outlet in Anjar, Gujarat"
               className="w-full rounded-lg shadow-lg"
             />
@@ -411,7 +411,7 @@ export default function ChairmansPerspective() {
             {/* First Image */}
             <div>
               <img
-                src="public/iol-images/From the Chairman's Desk/Ongoing Research-img.webp"
+                src="./iol-images/From the Chairman's Desk/Ongoing Research-img.webp"
                 alt="Ongoing Research at IndianOil R&D Centre"
                 className="w-full rounded-lg shadow-lg"
               />
@@ -435,7 +435,7 @@ export default function ChairmansPerspective() {
           {/* Second Image */}
           <div>
             <img
-              src="public/iol-images/From the Chairman's Desk/Aerial View Of Cbg -img.webp"
+              src="./iol-images/From the Chairman's Desk/Aerial View Of Cbg -img.webp"
               alt="Aerial View of CBG Plant at Gorakhpur"
               className="w-full rounded-lg shadow-lg"
             />
@@ -502,7 +502,7 @@ export default function ChairmansPerspective() {
           {/* Solar Image */}
           <div>
             <img
-              src="public/iol-images/From the Chairman's Desk/Solar-powered-img.webp"
+              src="./iol-images/From the Chairman's Desk/Solar-powered-img.webp"
               alt="Solar Powered Indane Bottling Plant, Leh"
               className="w-full rounded-lg shadow-lg"
             />
@@ -543,7 +543,7 @@ export default function ChairmansPerspective() {
           {/* Final Image */}
           <div>
             <img
-              src="public/iol-images/From the Chairman's Desk/Chairman With Iocians-img.webp"
+              src="./iol-images/From the Chairman's Desk/Chairman With Iocians-img.webp"
               alt="Chairman with IOCians at Paradip Refinery"
               className="w-full rounded-lg shadow-lg"
             />
@@ -602,7 +602,7 @@ export default function ChairmansPerspective() {
             {/* Right Column - Image */}
             <div>
               <img
-                src="public/iol-images/From the Chairman's Desk/Lube Blending-img.webp"
+                src="./iol-images/From the Chairman's Desk/Lube Blending-img.webp"
                 alt="Lube Blending Plant at Asaoti, Haryana"
                 className="w-full rounded-lg shadow-lg"
               />
@@ -731,7 +731,7 @@ export default function ChairmansPerspective() {
           {/* IOCians Image */}
           <div>
             <img
-              src="public/iol-images/From the Chairman's Desk/Iocians - The Energy Of Indianoil-img.webp"
+              src="./iol-images/From the Chairman's Desk/Iocians - The Energy Of Indianoil-img.webp"
               alt="IOCians - The Energy of IndianOil"
               className="w-full rounded-lg shadow-lg"
             />
@@ -778,7 +778,7 @@ export default function ChairmansPerspective() {
             {/* Right Column */}
             <div className="space-y-4">
               <img
-                src="public/iol-images/From the Chairman's Desk/Indianoil Nutrigardens-img.webp"
+                src="./iol-images/From the Chairman's Desk/Indianoil Nutrigardens-img.webp"
                 alt="IndianOil Nutrigardens CSR initiative"
                 className="w-full rounded-lg shadow-lg"
               />
@@ -810,7 +810,7 @@ export default function ChairmansPerspective() {
             {/* Full-width Image */}
             <div>
               <img
-                src="public/iol-images/From the Chairman's Desk/Indianoil Sports Scholar-img.webp"
+                src="./iol-images/From the Chairman's Desk/Indianoil Sports Scholar-img.webp"
                 alt="IndianOil Sports Scholar Aditi Gopichand receiving Arjuna Award 2024"
                 className="w-full rounded-lg shadow-lg"
               />
@@ -891,7 +891,7 @@ export default function ChairmansPerspective() {
           {/* People / Hockey Players Image */}
           <div>
             <img
-              src="public/iol-images/From the Chairman's Desk/Chairman And Functional-img.webp"
+              src="./iol-images/From the Chairman's Desk/Chairman And Functional-img.webp"
               alt="Chairman and Functional Directors with IndianOil Women Hockey Players who won the Asian Championship"
               className="w-full rounded-lg shadow-lg"
             />
@@ -958,7 +958,7 @@ export default function ChairmansPerspective() {
             {/* Right Column - Image */}
             <div>
               <img
-                src="public/iol-images/From the Chairman's Desk/Sprint-logo-img.webp"
+                src="./iol-images/From the Chairman's Desk/Sprint-logo-img.webp"
                 alt="Project SPRINT - A Transformational Project"
                 className="w-full rounded-lg shadow-lg"
               />
@@ -973,7 +973,7 @@ export default function ChairmansPerspective() {
           {/* Main Image */}
           <div>
             <img
-              src="public/iol-images/From the Chairman's Desk/Serving-every-mile.webp"
+              src="./iol-images/From the Chairman's Desk/Serving-every-mile.webp"
               alt="Serving Every Mile, Every Day for a Nation Always on the Move"
               className="w-full rounded-lg shadow-lg"
             />
@@ -1015,7 +1015,7 @@ export default function ChairmansPerspective() {
       <section className="relative w-full h-[500px] md:h-[600px]">
         {/* Background Image */}
         <img
-          src="public/iol-images/From the Chairman's Desk/Integrated-reported-img.webp"
+          src="./iol-images/From the Chairman's Desk/Integrated-reported-img.webp"
           alt="IndianOil Integrated Report"
           className="absolute inset-0 w-full h-full object-cover"
         />

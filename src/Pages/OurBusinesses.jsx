@@ -43,7 +43,7 @@ const OurBusinesses = () => {
         {/* Image */}
         <div className="flex-1 flex justify-center order-2 md:order-2">
           <img
-            src="public/iol-images/refining-pipelines-and-marketing.webp"
+            src="./iol-images/refining-pipelines-and-marketing.webp"
             alt="Ethylene Recovery Unit"
             className="rounded-lg shadow-md w-full object-cover"
           />
@@ -68,7 +68,7 @@ const OurBusinesses = () => {
         {/* Image */}
         <div className="flex-1 flex justify-center order-2 md:order-1">
           <img
-            src="public/iol-images/natural-gas.webp"
+            src="./iol-images/natural-gas.webp"
             alt="Natural Gas"
             className="rounded-lg shadow-md w-full object-cover"
           />
@@ -94,7 +94,7 @@ const OurBusinesses = () => {
         {/* Image */}
         <div className="flex-1 flex justify-center order-2 md:order-2">
           <img
-            src="public/iol-images/petrochemicals.webp"
+            src="./iol-images/petrochemicals.webp"
             alt="Petrochemicals"
             className="rounded-lg shadow-md w-full object-cover"
           />
@@ -119,7 +119,7 @@ const OurBusinesses = () => {
         {/* Image */}
         <div className="flex-1 flex justify-center order-2 md:order-1">
           <img
-            src="public/iol-images/Exploration-and-production.webp"
+            src="./iol-images/Exploration-and-production.webp"
             alt="E&P"
             className="rounded-lg shadow-md w-full object-cover"
           />
@@ -147,7 +147,7 @@ const OurBusinesses = () => {
         {/* Image */}
         <div className="flex-1 flex justify-center order-2 md:order-2">
           <img
-            src="public/iol-images/Alternative-energy-and-other-businesses.webp"
+            src="./iol-images/Alternative-energy-and-other-businesses.webp"
             alt="Petrochemicals"
             className="rounded-lg shadow-md w-full object-cover"
           />

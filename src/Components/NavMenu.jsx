@@ -77,6 +77,7 @@ const NavMenu = () => {
             title: "Corporate Overview",
             isInternal: true,
             items: [
+                { name: "Home", page: 6 },
                 { name: "About Us", page: 6 },
                 { name: "Our Businesses", page: 8 },
                 { name: "Competitive Edge", page: 10 },
@@ -296,9 +297,9 @@ const NavMenu = () => {
         <div className="relative">
             <header className="bg-white shadow-md fixed top-0 left-0 right-0 z-40 w-full">
                 <div className="flex items-center justify-between px-6 py-2">
-                    <div className="flex items-center w-14">
+                    <Link to={"/"} className="flex items-center w-14">
                         <img src="./Indian-oil-logo.webp" alt="" />
-                    </div>
+                    </Link>
 
                     <div className='text-sm'>
                         <p>Integrated Annual Report <b>2024-25</b></p>

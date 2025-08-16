@@ -194,14 +194,14 @@ export default function CompetitiveEdge() {
               </div>
               <div className="mt-4">
                 <img
-                  src="public/iol-images/Unmatched Scale and Outreach/Inland-graph.webp"
+                  src="./iol-images/Unmatched Scale and Outreach/Inland-graph.webp"
                   alt="Growing Inland and Export Mix Stats"
                   className="w-full h-auto"
                 />
               </div>
               <div className="mt-4">
                 <img
-                  src="public/iol-images/Unmatched Scale and Outreach/Export-throughput-graph.webp"
+                  src="./iol-images/Unmatched Scale and Outreach/Export-throughput-graph.webp"
                   alt="Growing Inland and Export Mix Stats"
                   className="w-full h-auto"
                 />
@@ -221,7 +221,7 @@ export default function CompetitiveEdge() {
               </div>
               <div className="mt-4">
                 <img
-                  src="public/iol-images/Unmatched Scale and Outreach/Upstream-production-graph.webp"
+                  src="./iol-images/Unmatched Scale and Outreach/Upstream-production-graph.webp"
                   alt="Upstream Stats"
                   className="w-full h-auto"
                 />
@@ -245,7 +245,7 @@ export default function CompetitiveEdge() {
               </div>
               <div className="mt-4">
                 <img
-                  src="public/iol-images/Unmatched Scale and Outreach/Retinery-throughput-graph.webp"
+                  src="./iol-images/Unmatched Scale and Outreach/Retinery-throughput-graph.webp"
                   alt="Midstream Stats"
                   className="w-full h-auto"
                 />
@@ -254,7 +254,7 @@ export default function CompetitiveEdge() {
           </div>
           <div className="mt-8 flex justify-center">
             <img
-              src="public/iol-images/Unmatched Scale and Outreach/Sprint.webp" // <-- replace with your actual path
+              src="./iol-images/Unmatched Scale and Outreach/Sprint.webp" // <-- replace with your actual path
               alt="Running Man"
               className="w-full max-w-md h-auto"
             />
@@ -276,7 +276,7 @@ export default function CompetitiveEdge() {
 
         <div className="mt-6 flex justify-center">
           <img
-            src="public/iol-images/Unmatched Scale and Outreach/Downstream-infograph.webp"
+            src="./iol-images/Unmatched Scale and Outreach/Downstream-infograph.webp"
             alt="Downstream Stats"
             className="w-full max-w-xl h-auto"
           />
@@ -358,7 +358,7 @@ export default function CompetitiveEdge() {
             {/* Logo */}
             <div className="w-14 h-14 mb-3">
               <img
-                src="public/iol-images/Diverse-Portfolio-Spanning/Petrochemicals-icon.webp"
+                src="./iol-images/Diverse-Portfolio-Spanning/Petrochemicals-icon.webp"
                 alt="Petrochemicals Logo"
                 className="w-full h-full object-contain"
               />
@@ -433,7 +433,7 @@ export default function CompetitiveEdge() {
             {/* Image */}
             <div className="mt-10">
               <img
-                src="public/iol-images/Diverse-Portfolio-Spanning/Diverse-portfolio-img.webp"
+                src="./iol-images/Diverse-Portfolio-Spanning/Diverse-portfolio-img.webp"
                 alt="Paradip Petrochemical Complex"
                 className="w-full h-auto rounded-lg shadow-md"
               />
@@ -448,7 +448,7 @@ export default function CompetitiveEdge() {
           {/* Natural Gas Logo */}
           <div className="w-14 h-14 mb-3">
             <img
-              src="public/iol-images/Diverse-Portfolio-Spanning/Natural-gas-icon.webp"
+              src="./iol-images/Diverse-Portfolio-Spanning/Natural-gas-icon.webp"
               alt="Natural Gas Logo"
               className="w-full h-full object-contain"
             />
@@ -504,7 +504,7 @@ export default function CompetitiveEdge() {
           {/* Alternative Energy Logo */}
           <div className="w-14 h-14 mb-3">
             <img
-              src="public/iol-images/Diverse-Portfolio-Spanning/Alternative-energy-icon.webp"
+              src="./iol-images/Diverse-Portfolio-Spanning/Alternative-energy-icon.webp"
               alt="Alternative Energy Logo"
               className="w-full h-full object-contain"
             />
@@ -571,7 +571,7 @@ export default function CompetitiveEdge() {
             {/* Image */}
             <div className="flex-shrink-0 lg:w-1/3 mt-6 lg:mt-0">
               <img
-                src="public/iol-images/Diverse-Portfolio-Spanning/Renewable-energy-expansion-img.webp"
+                src="./iol-images/Diverse-Portfolio-Spanning/Renewable-energy-expansion-img.webp"
                 alt="Wind Turbine Renewable Energy"
                 className="w-full rounded-lg shadow-md"
               />
@@ -603,7 +603,7 @@ export default function CompetitiveEdge() {
             <div className="col-span-12 lg:col-span-5 self-start">
               {/* Replace src with your chart */}
               <img
-                src="public/iol-images/Robust-Financials/Net-worth-graph.webp"
+                src="./iol-images/Robust-Financials/Net-worth-graph.webp"
                 alt="Net worth"
                 className="mt-2 w-full h-24 md:h-28 object-contain"
               />
@@ -668,7 +668,7 @@ export default function CompetitiveEdge() {
                 <div className="mt-3 flex items-center gap-5">
                   {/* Replace with your donut image */}
                   <img
-                    src="public/iol-images/Robust-Financials/Robust-financial-yellow-red-graph.webp"
+                    src="./iol-images/Robust-Financials/Robust-financial-yellow-red-graph.webp"
                     alt="Projected capacity donut"
                     className="w-28 h-28 object-contain"
                   />
@@ -690,7 +690,7 @@ export default function CompetitiveEdge() {
             {/* Right top: petroleum consumption bar; Right bottom: 4th Largest + growth curve */}
             <div className="col-span-12 lg:col-span-5 self-start">
               <img
-                src="public/iol-images/Robust-Financials/Growing-consumption-graph.webp"
+                src="./iol-images/Robust-Financials/Growing-consumption-graph.webp"
                 alt="Petroleum consumption"
                 className="mt-1 w-full h-24 md:h-28 object-contain"
               />
@@ -704,7 +704,7 @@ export default function CompetitiveEdge() {
                   <sup>th</sup> largest economy in 2025)
                 </p>
                 <img
-                  src="public/iol-images/Robust-Financials/Black-graph.webp"
+                  src="./iol-images/Robust-Financials/Black-graph.webp"
                   alt="Growth illustration"
                   className="mt-3 w-full h-32 md:h-36 object-contain"
                 />
@@ -926,7 +926,7 @@ export default function CompetitiveEdge() {
           {/* Left Image */}
           <div className="flex justify-center">
             <img
-              src="public/iol-images/Driving Sustainability and Inclusive Development/Sprint_Future-img.webp" // replace with actual image path
+              src="./iol-images/Driving Sustainability and Inclusive Development/Sprint_Future-img.webp" // replace with actual image path
               alt="Runner illustration"
               className="max-w-full h-auto"
             />

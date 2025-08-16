@@ -56,7 +56,7 @@ const AboutUs2 = () => {
         {/* Right Column - Image */}
         <div className="flex-1 flex justify-center md:justify-end">
           <img
-            src="public/iol-images/About-us-infographic.webp"
+            src="./iol-images/About-us-infographic.webp"
             alt="IndianOil Vision"
             className="w-full max-w-sm md:max-w-md h-auto object-contain"
           />
@@ -66,7 +66,7 @@ const AboutUs2 = () => {
       {/* Full-Width Image with Same Padding */}
       <div className="bg-gray-100 rounded-3xl mt-6">
         <img
-          src="public/iol-images/Indian-oil-values-the-north-star-inforgraphic.webp"
+          src="./iol-images/Indian-oil-values-the-north-star-inforgraphic.webp"
           alt="Full Width"
           className="w-full p-10 md:w-[80%] mx-auto"
         />

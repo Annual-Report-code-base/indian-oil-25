@@ -259,7 +259,7 @@ const Portfolio = () => {
 
                                         {/* Button */}
                                         <div>
-                                            <KnowMore/>
+                                            <KnowMore to={"/our-businesses"}/>
                                         </div>
                                     </div>
                                 </div>

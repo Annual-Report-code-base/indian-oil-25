@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AnimatedHeading, AnimatedText } from '../AnimationLib';
 
 const Leadership = () => {
-    const [isImageView, setIsImageView] = useState(false);
+    const [isImageView, setIsImageView] = useState(true);
 
     const teamMembers = [
         {
@@ -79,7 +79,7 @@ const Leadership = () => {
         <div className="">
             <div className=" mx-auto bg-white rounded-3xl overflow-hidden">
                 {/* Header */}
-                <div className="bg-gradient-to-r  from-blue-900 to-orange-500 text-white p-10 text-left flex items-center justify-between gap-6">
+                <div className="bg-gradient-to-r  from-blue-900 to-orange-500 text-white p-10 text-left flex md:flex-row flex-col items-center justify-between gap-6">
                     
                     <div className="text-left">
                         <AnimatedHeading
@@ -114,7 +114,7 @@ const Leadership = () => {
                     <div className="relative bg-gray-50 overflow-hidden">
                         <div className="relative group pb-4">
                             <img
-                                src="./iol-images/Leadership Team/Leadership-team-img.webp"
+                                src="./iol-images/Leadership_Team/Leadership-team-img.webp"
                                 alt="Leadership Team"
                                 className="w-full h-auto block transition-transform duration-300 "
                             />

@@ -67,7 +67,7 @@ const Message = () => {
                                     <img
                                         src="./iol-images/From the Chairman's Desk/From The Chairmans Desk.webp"
                                         alt="Chairman Portrait"
-                                        className="w-full h-full object-cover object-bottom grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-105"
+                                        className="w-full h-full object-cover object-bottom  transition-all duration-1000 group-hover:scale-105"
                                     />
                                 </div>
 
@@ -130,7 +130,7 @@ const Message = () => {
                                                     <div className="w-6 h-px bg-gradient-to-r from-blue-500/50 to-transparent"></div>
                                                     <div className="w-1 h-1 bg-blue-500/50 rounded-full"></div>
                                                 </div> */}
-                                                <KnowMore theme='rose-200'/>
+                                                <KnowMore to={"/from-the-chairman-s-desk"} />
                                             </div>
                                         </div>
                                     </div>

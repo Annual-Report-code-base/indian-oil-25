@@ -4,7 +4,7 @@ import AboutHome from '../Components/Home/AboutHome'
 import Portfolio from '../Components/Home/Portfolio'
 import Message from '../Components/Home/Message'
 import Leadership from '../Components/Home/Leadership'
-import CapSlider from '../Components/Home/Capslider'
+import CapSlider from '../Components/Home/CapSlider'
 
 const Home = () => {
     return (

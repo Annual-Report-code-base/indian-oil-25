@@ -4,6 +4,7 @@ import { LuChevronLeft, LuChevronRight, LuArrowUpRight } from 'react-icons/lu';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { AnimatedHeading, AnimatedText } from '../AnimationLib';
+import { Link } from 'react-router-dom';
 
 const CapSlider = () => {
     const cards = [
@@ -11,37 +12,37 @@ const CapSlider = () => {
             id: 1,
             image: './iol-images/Manufactured Capital/Manufactured-capital-backgound.webp',
             title: 'Manufactured capital',
-            link: '/innovation'
+            link: '/manufactured-capital'
         },
         {
             id: 2,
             image: './iol-images/Financial Capital/Financial-capital-background.webp',
             title: 'Financial capital',
-            link: '/technology'
+            link: '/financial-capital'
         },
         {
             id: 3,
             image: './iol-images/Social & Relationship capital/Social & Relationship Capital.webp',
             title: 'Social & Relationship Capital',
-            link: '/strategy'
+            link: '/social-relationship-capital'
         },
         {
             id: 4,
             image: './iol-images/Intellectual Capital/Intellectual-capital-background-img.webp',
             title: 'Intellectual Capital',
-            link: '/growth'
+            link: '/intellectual-capital'
         },
         {
             id: 5,
             image: '/iol-images/Human Capital/Dsc_5213.webp',
             title: 'Human Capital',
-            link: '/analytics'
+            link: '/human-capital'
         },
         {
             id: 6,
             image: '/iol-images/Natural-Capital/Natural-capital-background-img.webp',
             title: 'Natural Capital',
-            link: '/digital'
+            link: '/natural-capital'
         }
     ];
 
@@ -109,9 +110,9 @@ const CapSlider = () => {
                                     <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                                     {/* Arrow icon */}
-                                    <div className="absolute top-4 right-4 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 group-hover:translate-x-0">
+                                    <Link to={card.link} className="absolute top-4 right-4 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 group-hover:translate-x-0">
                                         <LuArrowUpRight className="w-5 h-5 text-gray-800" />
-                                    </div>
+                                    </Link>
                                 </div>
 
                                 {/* Title */}

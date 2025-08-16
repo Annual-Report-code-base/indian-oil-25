@@ -12,7 +12,6 @@ import StakeholderEngagement from './Pages/StakeholderEngagement';
 import MaterialityAssessment from './Pages/MaterialityAssessment';
 import VCM from './Pages/VCM';
 import Fueling from './Pages/Fueling';
-import ManufacturedCap from './Pages/manufacturedCap';
 import Footer from './Components/Footer';
 import FinancialCap from './Pages/FinancialCap';
 import SRCap from './Pages/SRCap';
@@ -31,6 +30,7 @@ import CompetitiveEdge from './Pages/CompetitiveEdge';
 import ChairmansPerspective from './Pages/ChairmansPerspective';
 import NaturalCap from './Pages/NaturalCap';
 import Governance from './Pages/Governance';
+import ManufacturedCap from './Pages/ManufacturedCap';
 
 function App() {
   return (
@@ -40,7 +40,8 @@ function App() {
           <NavMenu />
           <div className="pt-20">
             <Routes>
-              <Route path='/' element={<Home />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
               <Route path='/about-us' element={<AboutUs2 />} />
               <Route path='/our-businesses' element={<OurBusinesses />} />
               <Route path='/competitive-edge' element={<CompetitiveEdge />} />
@@ -53,6 +54,7 @@ function App() {
               <Route path='/materiality-assessment' element={<MaterialityAssessment />} />
               <Route path='/indianoil-s-value-creation-model' element={<VCM />} />
               <Route path='/fuelling-sustainable-growth' element={<Fueling />} />
+              {/* <Route path='/manufactured-capital' element={<ManufacturedCap />} /> */}
               <Route path='/manufactured-capital' element={<ManufacturedCap />} />
               <Route path='/financial-capital' element={<FinancialCap />} />
               <Route path='/social-relationship-capital' element={<SRCap />} />
