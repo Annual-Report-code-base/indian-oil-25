@@ -1,16 +1,12 @@
-import React from 'react'
+import React from "react";
+import Leadership from "../Components/Home/Leadership";
 
 const LeadershipTeam = () => {
-    return (
-        <div>
-            <div className="bg-[url('/iol-images/Leadership_Team/Leadership-team-img.webp')] bg-cover bg-center h-[850px] w-full ">
-                <div className='marginal'>
-                    <h1 className='text-2xl text-white font-medium '>Leadership Team</h1>
-                    <p className='text-4xl font-extralight text-white'>Meet the visionary leaders driving our success.</p>
-                </div>
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="marginal">
+      <Leadership />
+    </div>
+  );
+};
 
-export default LeadershipTeam
+export default LeadershipTeam;
