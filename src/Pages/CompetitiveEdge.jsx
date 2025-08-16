@@ -584,9 +584,9 @@ export default function CompetitiveEdge() {
         </div>
       </section>
 
-      <section className="bg-orange-50 py-10">
-        <div className="max-w-7xl mx-auto px-6 md:px-10">
-          <div className="grid grid-cols-12 gap-x-8 gap-y-8">
+      <section className="bg-orange-50 py-8">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <div className="grid grid-cols-12 gap-x-4 gap-y-6">
             {/* === ROW A: Robust Financials (left) + Net worth chart (right) === */}
             <div className="col-span-12 lg:col-span-7">
               <h3 className="text-yellow-700 font-bold text-lg">
@@ -600,18 +600,17 @@ export default function CompetitiveEdge() {
               </p>
             </div>
 
-            <div className="col-span-12 lg:col-span-5 self-start">
-              {/* Replace src with your chart */}
+            <div className="col-span-12 lg:col-span-5 self-start flex justify-start lg:justify-end">
               <img
                 src="./iol-images/Robust-Financials/Net-worth-graph.webp"
                 alt="Net worth"
-                className="mt-2 w-full h-24 md:h-28 object-contain"
+                className="w-[75%] md:w-[60%] object-contain"
               />
             </div>
 
-            {/* === ROW B: Two big stats (left block) aligned with two charts (right block) === */}
+            {/* === ROW B: Stats === */}
             <div className="col-span-12 lg:col-span-7">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3">
                 <div>
                   <p className="text-3xl md:text-4xl font-bold text-blue-900">
                     ₹99,892.92 Crore
@@ -639,12 +638,12 @@ export default function CompetitiveEdge() {
               </div>
             </div>
 
-            {/* Divider line across */}
+            {/* Divider line */}
             <div className="col-span-12">
-              <hr className="border-t border-gray-300" />
+              <hr className="border-t border-gray-300 my-4" />
             </div>
 
-            {/* === ROW C: Fulfilling India’s Energy Needs + right-hand stats/graph === */}
+            {/* === ROW C: Fulfilling India’s Energy Needs === */}
             <div className="col-span-12">
               <h3 className="text-blue-900 font-bold text-lg">
                 Fulfilling India’s Energy Needs
@@ -653,49 +652,32 @@ export default function CompetitiveEdge() {
 
             {/* Left copy + donut stat */}
             <div className="col-span-12 lg:col-span-7">
-              <p className="mt-2 text-gray-700 text-sm leading-relaxed">
+              <p className="text-gray-700 text-sm leading-relaxed">
                 India’s economy is expected to maintain a high growth
                 trajectory, driving increased demand for energy across sectors,
                 which would create growing market opportunities for IndianOil.
               </p>
 
-              <div className="mt-5">
-                <p className="text-orange-600 font-semibold text-sm">
-                  Projected capacity growth of Companies to meet the oil demand
-                  <span className="uppercase"> (MBPD)</span>
-                </p>
-
-                <div className="mt-3 flex items-center gap-5">
-                  {/* Replace with your donut image */}
-                  <img
-                    src="./iol-images/Robust-Financials/Robust-financial-yellow-red-graph.webp"
-                    alt="Projected capacity donut"
-                    className="w-28 h-28 object-contain"
-                  />
-                  {/* Legend */}
-                  <ul className="text-xs text-gray-700 space-y-1">
-                    <li className="flex items-center gap-2">
-                      <span className="inline-block w-3 h-3 rounded-full bg-yellow-500"></span>
-                      6.8 – 2030
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="inline-block w-3 h-3 rounded-full bg-rose-500"></span>
-                      5.2 – 2022
-                    </li>
-                  </ul>
-                </div>
+              <div className="flex justify-start lg:justify-start mt-3">
+                <img
+                  src="./iol-images/Robust-Financials/Robust-financial-yellow-red-graph.webp"
+                  alt="Projected capacity donut"
+                  className="w-[100%] md:w-[90%] object-contain"
+                />
               </div>
             </div>
 
-            {/* Right top: petroleum consumption bar; Right bottom: 4th Largest + growth curve */}
+            {/* Right side */}
             <div className="col-span-12 lg:col-span-5 self-start">
-              <img
-                src="./iol-images/Robust-Financials/Growing-consumption-graph.webp"
-                alt="Petroleum consumption"
-                className="mt-1 w-full h-24 md:h-28 object-contain"
-              />
+              <div className="flex justify-start lg:justify-start">
+                <img
+                  src="./iol-images/Robust-Financials/Growing-consumption-graph.webp"
+                  alt="Petroleum consumption"
+                  className="w-[100%] md:w-[90%] object-contain"
+                />
+              </div>
 
-              <div className="mt-5">
+              <div className="mt-6">
                 <p className="text-4xl font-bold text-blue-900">
                   4<sup>th</sup> Largest
                 </p>
@@ -703,17 +685,19 @@ export default function CompetitiveEdge() {
                   Economy in the world (As per IMF India has become 4
                   <sup>th</sup> largest economy in 2025)
                 </p>
-                <img
-                  src="./iol-images/Robust-Financials/Black-graph.webp"
-                  alt="Growth illustration"
-                  className="mt-3 w-full h-32 md:h-36 object-contain"
-                />
+                <div className="flex justify-start lg:justify-start mt-2">
+                  <img
+                    src="./iol-images/Robust-Financials/Black-graph.webp"
+                    alt="Growth illustration"
+                    className="w-[65%] md:w-[55%] object-contain"
+                  />
+                </div>
               </div>
             </div>
 
             {/* Footnotes */}
             <div className="col-span-12 lg:col-span-7">
-              <p className="text-[11px] text-gray-500 mt-4">
+              <p className="text-[11px] text-gray-500 mt-3">
                 ³ Snapshot of India’s oil & gas data monthly ready Reckoner
                 September-2024
               </p>
@@ -860,66 +844,68 @@ export default function CompetitiveEdge() {
         </div>
       </section>
 
-     <section className="relative w-full overflow-hidden">
-  {/* Background Image Layer */}
-  <div className="absolute inset-0">
-    <img
-      src="/iol-images/Driving Sustainability and Inclusive Development/Img.webp"
-      alt="Driving Sustainability and Inclusive Development"
-      className="w-full h-full object-cover lg:object-contain"
-    />
-    {/* Gradient Overlay */}
-    <div className="absolute inset-0 bg-gradient-to-b from-blue-900/70 to-transparent"></div>
-  </div>
-
-  {/* Foreground Content */}
-  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-10 py-12 sm:py-16 min-h-[80vh] lg:min-h-screen flex flex-col justify-center">
-    <div className="grid grid-cols-12 gap-x-6 gap-y-8">
-      {/* Left text block */}
-      <div className="col-span-12 lg:col-span-6">
-        <h3 className="text-lg font-bold text-white">
-          Driving Sustainability and Inclusive Development
-        </h3>
-        <p className="mt-3 text-sm leading-relaxed text-white max-w-md">
-          IndianOil is steadfast in its commitment to build a sustainable
-          future, prioritising environmental preservation and impactful social
-          upliftment programmes. By aligning our initiatives with global
-          Environmental, Social and Governance (ESG) standards, we contribute
-          to India’s energy targets as well as promote positive change in
-          communities and ecosystems.
-        </p>
-      </div>
-
-      {/* Right bordered stat box */}
-      <div className="col-span-12 lg:col-span-6 lg:pl-10">
-        <div className="border border-white rounded-md p-5 max-w-xs text-white bg-white/10 backdrop-blur-sm mx-auto lg:mx-0">
-          <p className="text-xs leading-snug mb-4">
-            Aiming for Net-Zero operational emissions by 2046, with a focus on
-            green hydrogen, biofuels and renewable energy solutions
-          </p>
-          <p className="text-3xl font-bold">31 GW</p>
-          <p className="text-sm mb-3">Renewable capacity target by 2030</p>
-          <p className="text-3xl font-bold">100%</p>
-          <p className="text-sm">Decarbonisation by 2046</p>
+      <section className="relative w-full overflow-hidden">
+        {/* Background Image Layer */}
+        <div className="absolute inset-0">
+          <img
+            src="/iol-images/Driving Sustainability and Inclusive Development/Img.webp"
+            alt="Driving Sustainability and Inclusive Development"
+            className="w-full h-full object-cover lg:object-contain"
+          />
+          {/* Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-900/70 to-transparent"></div>
         </div>
-      </div>
 
-      {/* Lower left stat */}
-      <div className="col-span-12 lg:col-span-6 mt-4 sm:mt-6 text-white">
-        <p className="text-3xl font-bold">1.36+ Crore</p>
-        <p className="text-sm">
-          Beneficiaries reached through CSR programmes during 2024-25
-        </p>
-      </div>
-    </div>
-  </div>
+        {/* Foreground Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-10 py-12 sm:py-16 min-h-[80vh] lg:min-h-screen flex flex-col justify-center">
+          <div className="grid grid-cols-12 gap-x-6 gap-y-8">
+            {/* Left text block */}
+            <div className="col-span-12 lg:col-span-6">
+              <h3 className="text-lg font-bold text-white">
+                Driving Sustainability and Inclusive Development
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-white max-w-md">
+                IndianOil is steadfast in its commitment to build a sustainable
+                future, prioritising environmental preservation and impactful
+                social upliftment programmes. By aligning our initiatives with
+                global Environmental, Social and Governance (ESG) standards, we
+                contribute to India’s energy targets as well as promote positive
+                change in communities and ecosystems.
+              </p>
+            </div>
 
-  {/* Caption */}
-  <div className="relative sm:absolute sm:bottom-4 sm:left-6 text-[10px] text-black text-bold opacity-80 mt-6 sm:mt-0 px-4 sm:px-0">
-    A glimpse of Digboi Refinery through the Refinery Ecopark
-  </div>
-</section>
+            {/* Right bordered stat box */}
+            <div className="col-span-12 lg:col-span-6 lg:pl-10">
+              <div className="border border-white rounded-md p-5 max-w-xs text-white bg-white/10 backdrop-blur-sm mx-auto lg:mx-0">
+                <p className="text-xs leading-snug mb-4">
+                  Aiming for Net-Zero operational emissions by 2046, with a
+                  focus on green hydrogen, biofuels and renewable energy
+                  solutions
+                </p>
+                <p className="text-3xl font-bold">31 GW</p>
+                <p className="text-sm mb-3">
+                  Renewable capacity target by 2030
+                </p>
+                <p className="text-3xl font-bold">100%</p>
+                <p className="text-sm">Decarbonisation by 2046</p>
+              </div>
+            </div>
 
+            {/* Lower left stat */}
+            <div className="col-span-12 lg:col-span-6 mt-4 sm:mt-6 text-white">
+              <p className="text-3xl font-bold">1.36+ Crore</p>
+              <p className="text-sm">
+                Beneficiaries reached through CSR programmes during 2024-25
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Caption */}
+        <div className="relative sm:absolute sm:bottom-4 sm:left-6 text-[10px] text-black text-bold opacity-80 mt-6 sm:mt-0 px-4 sm:px-0">
+          A glimpse of Digboi Refinery through the Refinery Ecopark
+        </div>
+      </section>
 
       <section className="relative w-full bg-white py-12">
         <div className="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
