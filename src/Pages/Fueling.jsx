@@ -1,4 +1,5 @@
 import React from 'react';
+import OurPresenceZoom from '../Components/Home/OurPresenceZoom';
 
 const Fueling = () => {
     const capitals = [
@@ -83,7 +84,9 @@ const Fueling = () => {
                 </div>
                 <div>
                 <img src="/iol-images/Fuelling Sustainable Growth/PencilSketch.webp" alt="Fuelling Sustainable Growth" className="w-full mt-6" />
-                <img src="/iol-images/Fuelling Sustainable Growth/map.jpg" alt="" className='mt-5'/>
+                {/* <img src="/iol-images/Fuelling Sustainable Growth/map.jpg" alt="" className='mt-5'/> */}
+
+                <OurPresenceZoom/>
             </div>
             </div>
             

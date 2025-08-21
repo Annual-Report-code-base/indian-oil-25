@@ -63,13 +63,14 @@ const Message = () => {
                                 <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-slate-400/40 z-20"></div>
 
                                 {/* Image - full height so bottom touches card bottom */}
-                                <div className="h-full overflow-hidden">
-                                    <img
-                                        src="./iol-images/From the Chairman's Desk/From The Chairmans Desk.webp"
-                                        alt="Chairman Portrait"
-                                        className="w-full h-full object-cover object-bottom  transition-all duration-1000 group-hover:scale-105"
-                                    />
-                                </div>
+                               <div className="h-full overflow-hidden group">
+  <img
+    src="./iol-images/From the Chairman's Desk/From The Chairmans Desk.webp"
+    alt="Chairman Portrait"
+    className="w-full h-full object-cover object-bottom transition-all duration-1000 scale-x-[-1] "
+  />
+</div>
+
 
                                 {/* Mobile Name Badge */}
                                 <div className="absolute bottom-0 w-[90%] left-1/2 -translate-x-1/2  md:hidden">

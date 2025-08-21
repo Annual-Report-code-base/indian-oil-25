@@ -15,38 +15,52 @@ const Portfolio = () => {
   const slides = [
     {
       id: 1,
-      image: "./iol-images/refining-pipelines-and-marketing.webp",
-      title: "REFINING, PIPELINES AND MARKETING",
-      text: "As one of India’s foremost downstreamenergy players, we advanced our missionto deliver energy solutions that are reliable, efficient and future-ready.",
-      buttonText: "Read More",
+      image: "./iol-images/r-and-d.webp",
+      title: "DELIVERING R&D EXCELLENCE",
+      text: "Our R&D efforts and major innovation initiatives during 2024-25 translated into tangible value across refining, petrochemicals, pipelines, marketing and clean energy.",
+      to: "/intellectual-capital",
     },
     {
       id: 2,
-      image: "./iol-images/natural-gas.webp",
-      title: "NATURAL GAS",
-      text: "With India pivoting towards a gas-based economy, IndianOil reinforced its position as a key enabler.",
-      buttonText: "Read More",
+      image: "./iol-images/enabling.webp",
+      title: "ENABLING NEW OPPORTUNITIES",
+      text: "Our business development efforts build enduring partnerships and open new avenues for growth, creating value across stakeholders and communities.",
+      to: "/our-businesses",
     },
     {
       id: 3,
-      image: "/iol-images/petrochemicals.webp",
-      title: "PETROCHEMICALS",
-      text: "2024-25 marked another leap in our journey to become a petrochemical powerhouse.",
-      buttonText: "Read More",
+      image: "./iol-images/refining-pipelines-and-marketing.webp",
+      title: "REFINING, PIPELINES AND MARKETING",
+      text: "As one of India’s foremost downstreamenergy players, we advanced our missionto deliver energy solutions that are reliable, efficient and future-ready.",
+      to: "/social-relationship-capital",
     },
     {
       id: 4,
-      image: "/iol-images/petrochemicals.webp",
-      title: "EXPLORATION AND PRODUCTION (E&P)",
-      text: "In alignment with India’s energy independence goals, we intensified upstream cactivities to build a balanced and resilient portfolio.",
-      buttonText: "Read More",
+      image: "./iol-images/natural-gas.webp",
+      title: "NATURAL GAS",
+      text: "With India pivoting towards a gas-based economy, IndianOil reinforced its position as a key enabler.",
+      to: "/our-businesses",
     },
     {
       id: 5,
+      image: "/iol-images/petrochemicals.webp",
+      title: "PETROCHEMICALS",
+      text: "2024-25 marked another leap in our journey to become a petrochemical powerhouse.",
+      to: "/our-businesses",
+    },
+    {
+      id: 6,
+      image: "/iol-images/petrochemicals.webp",
+      title: "EXPLORATION AND PRODUCTION (E&P)",
+      text: "In alignment with India’s energy independence goals, we intensified upstream cactivities to build a balanced and resilient portfolio.",
+      to: "/our-businesses",
+    },
+    {
+      id: 7,
       image: "/iol-images/Alternative-energy-and-other-businesses.webp",
       title: "ALTERNATIVE ENERGY AND OTHER BUSINESSES",
       text: "As India advances toward Net-Zero, IndianOil is leading the transition by diversifying into renewable energy, biofuels, green hydrogen, sustainable aviation fuel and waste-to-energy.",
-      buttonText: "Read More",
+      to: "/our-businesses",
     },
   ];
 
@@ -258,7 +272,7 @@ const Portfolio = () => {
 
                     {/* Button */}
                     <div>
-                      <KnowMore to={"/our-businesses"} />
+                      <KnowMore to={slide.to} />
                     </div>
                   </div>
                 </div>
