@@ -25,7 +25,7 @@ const Portfolio = () => {
       image: "./iol-images/enabling.webp",
       title: "ENABLING NEW OPPORTUNITIES",
       text: "Our business development efforts build enduring partnerships and open new avenues for growth, creating value across stakeholders and communities.",
-      to: "/our-businesses",
+      to: "/social-relationship-capital",
     },
     {
       id: 3,
@@ -50,7 +50,7 @@ const Portfolio = () => {
     },
     {
       id: 6,
-      image: "/iol-images/petrochemicals.webp",
+      image: "/iol-images/Exploration-and-production.webp",
       title: "EXPLORATION AND PRODUCTION (E&P)",
       text: "In alignment with India’s energy independence goals, we intensified upstream cactivities to build a balanced and resilient portfolio.",
       to: "/our-businesses",
