@@ -55,33 +55,7 @@ const Message = () => {
                     <div className="relative bg-white/5 backdrop-blur-2xl rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
                         <div className="grid md:grid-cols-7 gap-0">
                             {/* Image Side */}
-                            <div className="md:col-span-2 relative flex flex-col">
-                                <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-transparent to-slate-900/30 z-10"></div>
-
-                                {/* Minimal Corner Accents */}
-                                <div className="absolute top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-blue-400/40 z-20"></div>
-                                <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-slate-400/40 z-20"></div>
-
-                                {/* Image - full height so bottom touches card bottom */}
-                               <div className="h-full overflow-hidden group">
-  <img
-    src="./iol-images/From the Chairman's Desk/From The Chairmans Desk.webp"
-    alt="Chairman Portrait"
-    className="w-full h-full object-cover object-bottom transition-all duration-1000 scale-x-[-1] "
-  />
-</div>
-
-
-                                {/* Mobile Name Badge */}
-                                <div className="absolute bottom-0 w-[90%] left-1/2 -translate-x-1/2  md:hidden">
-                                    <div className="bg-black/60 backdrop-blur-xl rounded-lg p-4 border border-white/10">
-                                        <h3 className="text-lg font-light text-white mb-1">Shri A S Sahney</h3>
-                                        <p className="text-blue-300 text-xs font-medium tracking-wider">
-                                            Chairman, IndianOil
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                           
 
 
                             {/* Wider Content Side */}
@@ -104,7 +78,7 @@ const Message = () => {
 
                                 {/* Refined Message Content */}
                                 <div className="space-y- relative">
-                                    <div className="relative border-l border-white/10 pl-6">
+                                    <div className="relative border-l border-white/10 pl-">
                                         <p className="text-gray-300 text-xl leading-relaxed font-ligh">
                                             IndianOil concluded 2024–25 with record highs in product
                                             sales, refining and pipelines operations, while
@@ -118,9 +92,9 @@ const Message = () => {
                                     {/* Compact Signature Section */}
                                     <div className="relative pt-8">
                                         <div className="group cursor-pointer">
-                                           
 
-                                            <div className="border-l-2 border-blue-500/30 pl-6">
+
+                                            <div className="border-l-2 border-blue-500/30">
                                                 {/* <p className="text-white font-light text-lg mb-1">
                                                     Shri A S Sahney
                                                 </p>
@@ -134,6 +108,34 @@ const Message = () => {
                                                 <KnowMore to={"/from-the-chairman-s-desk"} />
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <div className="md:col-span-2 relative flex flex-col">
+                                <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-transparent to-slate-900/30 z-10"></div>
+
+                                {/* Minimal Corner Accents */}
+                                <div className="absolute top-4 left-4 w-8 h-8 border-l-2 border-t-2 border-blue-400/40 z-20"></div>
+                                <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-slate-400/40 z-20"></div>
+
+                                {/* Image - full height so bottom touches card bottom */}
+                                <div className="h-full overflow-hidden group">
+                                    <img
+                                        src="./iol-images/From the Chairman's Desk/From The Chairmans Desk.webp"
+                                        alt="Chairman Portrait"
+                                        className="w-full h-full object-cover object-bottom transition-all duration-1000 "
+                                    />
+                                </div>
+
+
+                                {/* Mobile Name Badge */}
+                                <div className="absolute bottom-0 w-[90%] left-1/2 -translate-x-1/2  md:hidden">
+                                    <div className="bg-black/60 backdrop-blur-xl rounded-lg p-4 border border-white/10">
+                                        <h3 className="text-lg font-light text-white mb-1">Shri A S Sahney</h3>
+                                        <p className="text-blue-300 text-xs font-medium tracking-wider">
+                                            Chairman, IndianOil
+                                        </p>
                                     </div>
                                 </div>
                             </div>
